@@ -36,6 +36,8 @@ def update():
     if head[1] < 0:
         head[1] = HEIGHT/CASE - 1
     if head in snake[1:]:
+        pyxel.cls(0)
+        pyxel.text(4, 50, "Perdu, recharger la page", 7)
         pyxel.quit()
     snake.insert(0, head)
     
