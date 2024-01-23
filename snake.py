@@ -20,7 +20,7 @@ def draw():
         pyxel.rect(x_head * CASE, y_head * CASE, CASE, CASE, 9)
     
     x_food, y_food = food
-    pyxel.rect(x_food * CASE, y_food * CASE, CASE, CASE, 8)
+    pyxel.rect(x_food * CASE, y_food * CASE, CASE, CASE, 11)
     
     pyxel.text(4, 4, f"SCORE : {score}", 7)
     
