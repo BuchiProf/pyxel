@@ -55,7 +55,7 @@ def update():
         direction = [-1, 0]
     elif pyxel.btn(pyxel.KEY_RIGHT) and direction in ([0, 1], [0, -1]):
         direction = [1, 0]
-    elif pyxel.btn(pyxel.KEY_UP) and direction in ([1, 0], [-1, 0]):
+    elif (pyxel.btn(pyxel.KEY_UP) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_UP)) and direction in ([1, 0], [-1, 0]):
         direction = [0, -1]
     elif pyxel.btn(pyxel.KEY_DOWN) and direction in ([1, 0], [-1, 0]):
         direction = [0, 1]
